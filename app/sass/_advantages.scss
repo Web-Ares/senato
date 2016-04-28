@@ -1,0 +1,385 @@
+
+.advantages {
+  margin-bottom: 60px;
+
+  .advantages__list {
+
+    .advantages__list-item {
+      position: relative;
+      padding-left: 67px;
+      margin-bottom: 53px;
+      @include main-font2();
+      font-size: 19px;
+      color: #33434c;
+
+      mark {
+        color: #3eacaf;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        background: url(../img/icons-sprite.png) no-repeat;
+        background-size: 186.5px 60px;
+        content: '';
+      }
+
+      &_clock {
+
+        &:before {
+          top: -12px;
+          left: -1px;
+          width: 50px;
+          height: 39px;
+          background-position: left top;
+        }
+      }
+
+      &_project {
+
+        &:before {
+          top: -30px;
+          width: 58px;
+          height: 60px;
+          background-position: -66px 0;
+        }
+      }
+
+      &_load {
+
+        &:before {
+          top: -27px;
+          width: 50px;
+          height: 55px;
+          background-position: right top;
+        }
+      }
+    }
+  }
+  .advantages__map {
+    display: none;
+  }
+}
+
+@media (min-width: $phone-landscape) {
+
+}
+@media (min-width: $tablet-portrait) {
+
+  .advantages {
+
+    .advantages__list {
+      text-align: justify;
+      margin-bottom: 60px;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+      }
+
+      .advantages__list-item {
+        vertical-align: top;
+        display: inline-block;
+      }
+    }
+    .advantages__map {
+      display: block;
+      position: relative;
+      margin: 0 -16px 0 -23px;
+      height: 356px;
+      background: url(../img/map.png) no-repeat;
+      background-size: contain;
+
+      > div {
+        padding-left: 31px;
+        padding-top: 12px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        > span {
+          display: block;
+        }
+        .advantages__map-title {
+          margin-bottom: 5px;
+          @include main-font2();
+          font-size: 18px;
+          color: #2c2c2c;
+          text-transform: uppercase;
+        }
+        .advantages__map-type {
+          font-size: 16px;
+          color: #979595;
+        }
+      }
+
+      .advantages__map-house {
+        position: absolute;
+        top: 14px;
+        left: 33.8%;
+        width: 272px;
+        height: 78px;
+        background: url(../img/house-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+      .advantages__map-market {
+        position: absolute;
+        right: 18.4%;
+        top: 6px;
+        width: 176px;
+        height: 73px;
+        padding-right: 19px;
+        background: url(../img/market-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .advantages {
+    margin-bottom: 90px;
+
+    .advantages__list {
+      text-align: justify;
+      margin-bottom: 106px;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+      }
+
+      .advantages__list-item {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+        padding-left: 75px;
+        @include main-font2();
+        font-size: 26px;
+        color: #33434c;
+
+        mark {
+          color: #3eacaf;
+        }
+
+        &:before {
+          position: absolute;
+          left: 0;
+          background: url(../img/icons-sprite.png) no-repeat;
+          background-size: 186.5px 60px;
+          content: '';
+        }
+
+        &_clock {
+
+          &:before {
+            top: -12px;
+            left: -1px;
+            width: 50px;
+            height: 39px;
+            background-position: left top;
+          }
+        }
+
+        &_project {
+
+          &:before {
+            top: -30px;
+            width: 58px;
+            height: 60px;
+            background-position: -66px 0;
+          }
+        }
+
+        &_load {
+
+          &:before {
+            top: -27px;
+            width: 50px;
+            height: 55px;
+            background-position: right top;
+          }
+        }
+      }
+    }
+    .advantages__map {
+      position: relative;
+      margin: 0 -16px 0 -23px;
+      height: 356px;
+      background: url(../img/map.png) no-repeat;
+      background-size: contain;
+
+      > div {
+        padding-left: 31px;
+        padding-top: 12px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        > span {
+          display: block;
+        }
+        .advantages__map-title {
+          margin-bottom: 5px;
+          @include main-font2();
+          font-size: 18px;
+          color: #2c2c2c;
+          text-transform: uppercase;
+        }
+        .advantages__map-type {
+          font-size: 16px;
+          color: #979595;
+        }
+      }
+
+      .advantages__map-house {
+        position: absolute;
+        top: 14px;
+        left: 33.8%;
+        width: 272px;
+        height: 78px;
+        background: url(../img/house-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+      .advantages__map-market {
+        position: absolute;
+        right: 18.4%;
+        top: 6px;
+        width: 176px;
+        height: 73px;
+        padding-right: 19px;
+        background: url(../img/market-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+}
+@media (min-width: $desktop) {
+
+  .advantages {
+    margin-bottom: 90px;
+
+    .advantages__list {
+      text-align: justify;
+      margin-bottom: 106px;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+      }
+
+      .advantages__list-item {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+        padding-left: 75px;
+        @include main-font2();
+        font-size: 26px;
+        color: #33434c;
+
+        mark {
+          color: #3eacaf;
+        }
+
+        &:before {
+          position: absolute;
+          left: 0;
+          background: url(../img/icons-sprite.png) no-repeat;
+          background-size: 186.5px 60px;
+          content: '';
+        }
+
+        &_clock {
+
+          &:before {
+            top: -12px;
+            left: -1px;
+            width: 50px;
+            height: 39px;
+            background-position: left top;
+          }
+        }
+
+        &_project {
+
+          &:before {
+            top: -30px;
+            width: 58px;
+            height: 60px;
+            background-position: -66px 0;
+          }
+        }
+
+        &_load {
+
+          &:before {
+            top: -27px;
+            width: 50px;
+            height: 55px;
+            background-position: right top;
+          }
+        }
+      }
+    }
+    .advantages__map {
+      position: relative;
+      margin: 0 -16px 0 -23px;
+      height: 356px;
+      background: url(../img/map.png) no-repeat;
+      background-size: contain;
+
+      > div {
+        padding-left: 31px;
+        padding-top: 12px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        > span {
+          display: block;
+        }
+        .advantages__map-title {
+          margin-bottom: 5px;
+          @include main-font2();
+          font-size: 18px;
+          color: #2c2c2c;
+          text-transform: uppercase;
+        }
+        .advantages__map-type {
+          font-size: 16px;
+          color: #979595;
+        }
+      }
+
+      .advantages__map-house {
+        position: absolute;
+        top: 14px;
+        left: 33.8%;
+        width: 272px;
+        height: 78px;
+        background: url(../img/house-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+      .advantages__map-market {
+        position: absolute;
+        right: 18.4%;
+        top: 6px;
+        width: 176px;
+        height: 73px;
+        padding-right: 19px;
+        background: url(../img/market-tooltip.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+}
+
