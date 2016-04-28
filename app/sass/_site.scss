@@ -1,0 +1,236 @@
+
+.site {
+  position: relative;
+  z-index: 1;
+  min-width: 320px;
+  min-height: 100%;
+  @include main-font1();
+
+  .site__centering {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .site__header {
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 70px;
+    background: #152731;
+
+    .site__header-inner {
+
+      h2 {
+        margin-bottom: 22px;
+        font-size: 33px;
+        line-height: 35px;
+        color: #fff;
+        @include main-font7();
+
+        strong {
+          @include main-font6();
+        }
+      }
+
+      p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        color: #aac4c8;
+        letter-spacing: -0.1px;
+        @include main-font5();
+        font-style: italic;
+      }
+
+      .btn  {
+        width: 158px;
+      }
+    }
+    .site__header-pic {
+      display: none;
+    }
+  }
+  .site__header-scroll-btn {
+    @include absoluteCenterX();
+    bottom: 21px;
+    width: 20px;
+    height: 30px;
+    background: url(../img/scroll-btn.png) no-repeat;
+    background-size: contain;
+  }
+  .site__content {
+    padding-top: 60px;
+  }
+
+}
+
+@media (min-width: $phone-landscape) {
+
+}
+@media (min-width: $tablet-portrait) {
+
+  .site {
+
+    .site__header {
+      padding-top: 200px;
+
+      .site__header-inner {
+
+        h2 {
+          margin-bottom: 35px;
+          font-size: 45px;
+          line-height: 50px;
+          white-space: pre-line;
+        }
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $tablet-landscape) {
+
+  .site {
+    position: relative;
+    z-index: 1;
+    min-width: 320px;
+    min-height: 100%;
+    @include main-font1();
+
+    .site__centering {
+      max-width: 1170px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+    .site__header {
+      position: relative;
+      min-height: 711px;
+      padding-top: 253px;
+      background: #152731;
+
+      .site__header-inner {
+
+        h2 {
+          margin-bottom: 61px;
+          font-size: 50px;
+          line-height: 60px;
+          color: #fff;
+          @include main-font7();
+          white-space: pre-line;
+
+          strong {
+            @include main-font6();
+          }
+        }
+
+        p {
+          margin-bottom: 28px;
+          font-size: 30px;
+          color: #aac4c8;
+          letter-spacing: -0.1px;
+          @include main-font5();
+          font-style: italic;
+        }
+
+        .btn  {
+          width: 158px;
+        }
+      }
+      .site__header-pic {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 41.9%;
+        background-size: cover;
+        background-position: left;
+      }
+    }
+    .site__header-scroll-btn {
+      @include absoluteCenterX();
+      bottom: 58px;
+      width: 20px;
+      height: 30px;
+      background: url(../img/scroll-btn.png) no-repeat;
+      background-size: contain;
+    }
+    .site__content {
+      padding-top: 161px;
+    }
+
+  }
+
+}
+@media (min-width: $desktop) {
+
+  .site {
+    position: relative;
+    z-index: 1;
+    min-width: 320px;
+    min-height: 100%;
+    @include main-font1();
+
+    .site__centering {
+      max-width: 1170px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+    .site__header {
+      position: relative;
+      min-height: 711px;
+      padding-top: 253px;
+      background: #152731;
+
+      .site__header-inner {
+
+        h2 {
+          margin-bottom: 61px;
+          font-size: 50px;
+          line-height: 60px;
+          color: #fff;
+          @include main-font7();
+          white-space: pre-line;
+
+          strong {
+            @include main-font6();
+          }
+        }
+
+        p {
+          margin-bottom: 28px;
+          font-size: 30px;
+          color: #aac4c8;
+          letter-spacing: -0.1px;
+          @include main-font5();
+          font-style: italic;
+        }
+
+        .btn  {
+          width: 158px;
+        }
+      }
+      .site__header-pic {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 41.9%;
+        background-size: cover;
+        background-position: left;
+      }
+    }
+    .site__header-scroll-btn {
+      @include absoluteCenterX();
+      bottom: 58px;
+      width: 20px;
+      height: 30px;
+      background: url(../img/scroll-btn.png) no-repeat;
+      background-size: contain;
+    }
+    .site__content {
+      padding-top: 161px;
+    }
+
+  }
+
+}
+

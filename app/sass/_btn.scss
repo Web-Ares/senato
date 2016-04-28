@@ -1,0 +1,71 @@
+.btn {
+  position: relative;
+  border: none;
+  height: 47px;
+  padding: 0 10px;
+  color: $btn-color;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  font-size: 18px;
+  @include main-font2();
+  background: $btn-back;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    border-radius: 35px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+    @include transition(all, .2, 0)
+  }
+
+  &:hover {
+
+    &:before {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      border-width: 4px;
+    }
+  }
+
+  &_2 {
+    width: 150px;
+    height: 40px;
+    background: $btn-2-back;
+
+    &:hover {
+      background: $btn-2-back-hover;
+    }
+
+    &:active {
+      color: $btn-2-color-active;
+      background: $btn-2-back-active;
+    }
+  }
+  &_3 {
+
+    span {
+
+      &:after {
+        position: relative;
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        margin-left: 4px;
+        background: url(../img/white-arrow.png) no-repeat;
+        background-size: contain;
+        content: '';
+      }
+    }
+  }
+
+}
