@@ -17,16 +17,12 @@
     width: 240px;
     font-size: 13px;
     line-height: 16px;
-    color: #8c9a9f;
+    color: $logo-text-color;
     font-weight: 400;
     white-space: pre-line;
   }
-
 }
 
-@media (min-width: $phone-landscape) {
-
-}
 @media (min-width: $tablet-portrait) {
 
   .logo {
@@ -39,64 +35,14 @@
       font-size: 17px;
       line-height: 20px;
     }
-
   }
-
-}
-@media (min-width: $tablet-landscape) {
-
-  .logo {
-    display: inline-block;
-    position: absolute;
-    top: 74px;
-    width: 61px;
-    height: 110px;
-
-    img {
-      width: 100%;
-    }
-
-    .logo__text {
-      display: inline-block;
-      left: 130%;
-      @include absoluteCenterY();
-      width: 270px;
-      font-size: 17px;
-      line-height: 20px;
-      color: #8c9a9f;
-      font-weight: 400;
-      white-space: pre-line;
-    }
-
-  }
-
 }
 @media (min-width: $desktop) {
 
   .logo {
-    display: inline-block;
-    position: absolute;
     top: 74px;
     width: 61px;
     height: 110px;
-
-    img {
-      width: 100%;
-    }
-
-    .logo__text {
-      display: inline-block;
-      left: 130%;
-      @include absoluteCenterY();
-      width: 270px;
-      font-size: 17px;
-      line-height: 20px;
-      color: #8c9a9f;
-      font-weight: 400;
-      white-space: pre-line;
-    }
-
   }
-
 }
 

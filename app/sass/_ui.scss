@@ -29,16 +29,27 @@
     margin-bottom: 10px;
 
     > div {
-      display: inline-block;
-      vertical-align: top;
+      //display: inline-block;
+      //vertical-align: top;
       padding: 0 5px;
     }
   }
 
-
   //fonts
-  &__myriadpro-regular {
-    @include main-font1
+  .ui__proximanova-regular {
+    @include main-font1()
   }
-
+  .ui__proximanova-bold {
+    @include main-font2()
+  }
+  .ui__libre-baskervile {
+    @include main-font3();
+    font-style:italic;
+  }
+  .ui__nexa-bold {
+    @include main-font4()
+  }
+  .ui__nexa-light {
+    @include main-font5()
+  }
 }

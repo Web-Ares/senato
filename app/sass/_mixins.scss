@@ -10,26 +10,16 @@
   font-style: normal;
 }
 @mixin main-font3() {
-  font-family: "proximanova-semibold", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-@mixin main-font4() {
-  font-family: "proximanova-light", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-@mixin main-font5() {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font6() {
+@mixin main-font4() {
   font-family: 'Nexa-Bold', serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font7() {
+@mixin main-font5() {
   font-family: 'Nexa-Light', serif;
   font-weight: 400;
   font-style: normal;

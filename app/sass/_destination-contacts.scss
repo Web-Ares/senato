@@ -7,10 +7,10 @@
 
     h3 {
       margin-bottom: 29px;
-      @include main-font5();
+      @include main-font3();
       font-style: italic;
       font-size: 27px;
-      color: #33434c;
+      color: $contacts-color;
       letter-spacing: -0.1px;
     }
     p {
@@ -18,7 +18,7 @@
       margin-bottom: 28px;
       font-size: 16px;
       line-height: 23px;
-      color: #33434c;
+      color: $contacts-color;
 
       strong {
         @include main-font2();
@@ -31,22 +31,29 @@
     input {
       height: 50px;
       width: 100%;
-      border: 2px solid #3eacaf;
+      border: 2px solid $contacts-input-border;
       border-radius: 4px;
-      padding: 0 17px 0;
-      color: #88a5a9;
-      font-size: 16px;
+      box-shadow: inset 1px 1px 6px transparent;
+      padding: 0 20px 0;
+      color: $contacts-input-color;
+      font-size: 17px;
+      letter-spacing: 0.4px;
       line-height: 20px;
       @include main-font2();
+      @include transition(box-shadow, .3, 0);
+
+      &:focus {
+        box-shadow: inset 1px 1px 6px $contacts-input-focus;
+      }
     }
     .btn {
       width: 108px;
       margin: 20px auto;
     }
 
-    ::-webkit-input-placeholder {color:#88a5a9;}
-    :-moz-placeholder           {color:#88a5a9;}
-    :-ms-input-placeholder      {color:#88a5a9;}
+    ::-webkit-input-placeholder {color:$contacts-input-color;}
+    :-moz-placeholder           {color:$contacts-input-color;}
+    :-ms-input-placeholder      {color:$contacts-input-color;}
 
   }
   .destination-contacts__pic {
@@ -78,49 +85,13 @@
 
   .destination-contacts {
     position: relative;
-    min-height: 684px;
-    padding-top: 187px;
+    min-height: 570px;
+    padding-top: 118px;
 
     .destination-contacts__form {
-      position: relative;
-      z-index: 2;
 
-      h3 {
-        margin-bottom: 35px;
-        @include main-font5();
-        font-style: italic;
-        font-size: 36px;
-        color: #33434c;
-        letter-spacing: -0.1px;
-      }
-      p {
-        max-width: 350px;
-        margin-bottom: 28px;
-        font-size: 16px;
-        line-height: 23px;
-        color: #33434c;
-
-        strong {
-          @include main-font2();
-        }
-      }
       fieldset {
-        position: relative;
         width: 325px;
-        margin-bottom: 12px;
-        margin-left: -4px;
-
-      }
-      input {
-        height: 57px;
-        width: 100%;
-        border: 2px solid #3eacaf;
-        border-radius: 4px;
-        padding: 0 17px 0;
-        color: #88a5a9;
-        font-size: 18px;
-        line-height: 20px;
-        @include main-font2();
       }
       .btn {
         position: absolute;
@@ -129,14 +100,11 @@
         bottom: 0;
         width: 108px;
         height: auto;
+        margin: 0;
       }
-
-      ::-webkit-input-placeholder {color:#88a5a9;}
-      :-moz-placeholder           {color:#88a5a9;}
-      :-ms-input-placeholder      {color:#88a5a9;}
-
     }
     .destination-contacts__pic {
+      display: block;
       position: absolute;
       width: 55.3%;
       top: 0;
@@ -147,81 +115,19 @@
       background-repeat: no-repeat;
     }
   }
-
 }
 @media (min-width: $desktop) {
 
   .destination-contacts {
-    position: relative;
     min-height: 684px;
     padding-top: 187px;
 
     .destination-contacts__form {
-      position: relative;
-      z-index: 2;
 
-      h3 {
-        margin-bottom: 35px;
-        @include main-font5();
-        font-style: italic;
-        font-size: 36px;
-        color: #33434c;
-        letter-spacing: -0.1px;
-      }
-      p {
-        max-width: 350px;
-        margin-bottom: 28px;
-        font-size: 16px;
-        line-height: 23px;
-        color: #33434c;
-
-        strong {
-          @include main-font2();
-        }
-      }
       fieldset {
-        position: relative;
-        width: 325px;
-        margin-bottom: 12px;
         margin-left: -4px;
-
       }
-      input {
-        height: 57px;
-        width: 100%;
-        border: 2px solid #3eacaf;
-        border-radius: 4px;
-        padding: 0 17px 0;
-        color: #88a5a9;
-        font-size: 18px;
-        line-height: 20px;
-        @include main-font2();
-      }
-      .btn {
-        position: absolute;
-        top: 0;
-        right: -62px;
-        bottom: 0;
-        width: 108px;
-        height: auto;
-      }
-
-      ::-webkit-input-placeholder {color:#88a5a9;}
-      :-moz-placeholder           {color:#88a5a9;}
-      :-ms-input-placeholder      {color:#88a5a9;}
-
-    }
-    .destination-contacts__pic {
-      position: absolute;
-      width: 55.3%;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: left center;
-      background-repeat: no-repeat;
     }
   }
-
 }
 

@@ -37,21 +37,10 @@
     }
   }
 
-  &_2 {
-    width: 150px;
-    height: 40px;
-    background: $btn-2-back;
-
-    &:hover {
-      background: $btn-2-back-hover;
-    }
-
-    &:active {
-      color: $btn-2-color-active;
-      background: $btn-2-back-active;
-    }
+  > span {
+    text-align: center;
   }
-  &_3 {
+  &_2 {
 
     span {
 
